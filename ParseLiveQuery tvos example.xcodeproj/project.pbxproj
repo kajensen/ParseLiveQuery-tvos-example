@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90E5D1671D92E1B10021287E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5D1661D92E1B10021287E /* AppDelegate.swift */; };
+		90E5D1691D92E1B10021287E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E5D1681D92E1B10021287E /* ViewController.swift */; };
+		90E5D16C1D92E1B20021287E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90E5D16A1D92E1B20021287E /* Main.storyboard */; };
+		90E5D16E1D92E1B20021287E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90E5D16D1D92E1B20021287E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90E5D1631D92E1B10021287E /* ParseLiveQuery tvos example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParseLiveQuery tvos example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E5D1661D92E1B10021287E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		90E5D1681D92E1B10021287E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		90E5D16B1D92E1B20021287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		90E5D16D1D92E1B20021287E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		90E5D16F1D92E1B20021287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90E5D1601D92E1B10021287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90E5D15A1D92E1B10021287E = {
+			isa = PBXGroup;
+			children = (
+				90E5D1651D92E1B10021287E /* ParseLiveQuery tvos example */,
+				90E5D1641D92E1B10021287E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90E5D1641D92E1B10021287E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90E5D1631D92E1B10021287E /* ParseLiveQuery tvos example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90E5D1651D92E1B10021287E /* ParseLiveQuery tvos example */ = {
+			isa = PBXGroup;
+			children = (
+				90E5D1661D92E1B10021287E /* AppDelegate.swift */,
+				90E5D1681D92E1B10021287E /* ViewController.swift */,
+				90E5D16A1D92E1B20021287E /* Main.storyboard */,
+				90E5D16D1D92E1B20021287E /* Assets.xcassets */,
+				90E5D16F1D92E1B20021287E /* Info.plist */,
+			);
+			path = "ParseLiveQuery tvos example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90E5D1621D92E1B10021287E /* ParseLiveQuery tvos example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90E5D1721D92E1B20021287E /* Build configuration list for PBXNativeTarget "ParseLiveQuery tvos example" */;
+			buildPhases = (
+				90E5D15F1D92E1B10021287E /* Sources */,
+				90E5D1601D92E1B10021287E /* Frameworks */,
+				90E5D1611D92E1B10021287E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParseLiveQuery tvos example";
+			productName = "ParseLiveQuery tvos example";
+			productReference = 90E5D1631D92E1B10021287E /* ParseLiveQuery tvos example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90E5D15B1D92E1B10021287E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					90E5D1621D92E1B10021287E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 90E5D15E1D92E1B10021287E /* Build configuration list for PBXProject "ParseLiveQuery tvos example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 90E5D15A1D92E1B10021287E;
+			productRefGroup = 90E5D1641D92E1B10021287E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90E5D1621D92E1B10021287E /* ParseLiveQuery tvos example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90E5D1611D92E1B10021287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E5D16E1D92E1B20021287E /* Assets.xcassets in Resources */,
+				90E5D16C1D92E1B20021287E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90E5D15F1D92E1B10021287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90E5D1691D92E1B10021287E /* ViewController.swift in Sources */,
+				90E5D1671D92E1B10021287E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90E5D16A1D92E1B20021287E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90E5D16B1D92E1B20021287E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90E5D1701D92E1B20021287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		90E5D1711D92E1B20021287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90E5D1731D92E1B20021287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "ParseLiveQuery tvos example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.ParseLiveQuery-tvos-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		90E5D1741D92E1B20021287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "ParseLiveQuery tvos example/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.ParseLiveQuery-tvos-example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90E5D15E1D92E1B10021287E /* Build configuration list for PBXProject "ParseLiveQuery tvos example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E5D1701D92E1B20021287E /* Debug */,
+				90E5D1711D92E1B20021287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90E5D1721D92E1B20021287E /* Build configuration list for PBXNativeTarget "ParseLiveQuery tvos example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90E5D1731D92E1B20021287E /* Debug */,
+				90E5D1741D92E1B20021287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90E5D15B1D92E1B10021287E /* Project object */;
+}
