@@ -17,23 +17,24 @@ protocol LiveQueryManagerDelegate {
 class LiveQueryManager: NSObject {
     
     private var subscription: Subscription<PFObject>?
-    private var query: PFQuery?
+    private var query: PFQuery<PFObject>?
+    private var client = ParseLiveQuery.Client()
     var delegate: LiveQueryManagerDelegate?
     
     convenience init(className: String) {
         self.init()
         query = PFQuery(className: className)
         query?.whereKeyExists("number")
-        subscription = query?.subscribe()
-        subscription?.handle(Event.Updated) { [unowned self] query, object in
-            self.delegate?.objectUpdated(object)
+        subscription = client.subscribe(query!)
+        subscription?.handle(Event.updated) { [unowned self] query, object in
+            self.delegate?.objectUpdated(object: object)
         }
-        subscription?.handle(Event.Created) { [unowned self] query, object in
-            self.delegate?.objectCreated(object)
+        subscription?.handle(Event.created) { [unowned self] query, object in
+            self.delegate?.objectCreated(object: object)
         }
-        query?.findObjectsInBackgroundWithBlock({ [unowned self]  (objects, error) in
+        query?.findObjectsInBackground(block: { [unowned self]  (objects, error) in
             if let objects = objects {
-                self.delegate?.objectsQueried(objects)
+                self.delegate?.objectsQueried(objects: objects)
             }
         })
     }
