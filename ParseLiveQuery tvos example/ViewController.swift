@@ -18,7 +18,7 @@ class ViewController: UIViewController, LiveQueryManagerDelegate {
     
     private var liveQueryManager: LiveQueryManager? {
         didSet {
-            toggleButton.setTitle(liveQueryManager == nil ? "START" : "STOP", forState: .Normal)
+            toggleButton.setTitle(liveQueryManager == nil ? "START" : "STOP", for: .normal)
         }
     }
     private var numberCreated = 0 {
@@ -68,26 +68,26 @@ class ViewController: UIViewController, LiveQueryManagerDelegate {
         reset()
     }
     
-    func createObject() {
+    @objc func createObject() {
         let object = PFObject(className: className)
-        object["number"] = NSNumber(int: rand())
+        object["number"] = NSNumber(value: arc4random())
         object.saveInBackground()
-        if rand() % 2 == 0 {
-            performSelector(#selector(ViewController.updateObject(_:)), withObject: object, afterDelay: NSTimeInterval(rand() % 10))
+        if arc4random() % 2 == 0 {
+            perform(#selector(ViewController.updateObject(object:)), with: object, afterDelay: TimeInterval(arc4random() % 10))
         }
-        performSelector(#selector(ViewController.createObject), withObject: nil, afterDelay: 5)
+        perform(#selector(ViewController.createObject), with: nil, afterDelay: 5)
     }
     
-    func updateObject(object: PFObject?) {
+    @objc func updateObject(object: PFObject?) {
         guard let object = object else {
             return
         }
-        object["number"] = NSNumber(int: rand())
+        object["number"] = NSNumber(value: arc4random())
         object.saveInBackground()
     }
     
     func objectCreated(object: PFObject) {
-        dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+        DispatchQueue.main.async {
             print("created", object)
             self.numberCreated += 1
             self.numberTotal += 1
@@ -95,7 +95,7 @@ class ViewController: UIViewController, LiveQueryManagerDelegate {
     }
     
     func objectUpdated(object: PFObject) {
-        dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+        DispatchQueue.main.async {
             print("updated", object)
             self.numberUpdated += 1
         }
